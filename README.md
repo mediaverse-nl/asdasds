@@ -35,19 +35,26 @@ $ composer require mediaverse-nl/asdasds --no-dev
 ####1 stap
 ```
 cd packages/Mediaverse/<vendor>
+```
+```
 php prefill.php
 ```
 ```
 git init
-git remote add origin https://github.com/mediaverse-nl/<packagename>.git
+git add .
 git commit -m "initial commit"
+git remote add origin https://github.com/mediaverse-nl/<packagename>.git
 git push origin master
-
 ```
 ####2 stap
 ```
 $ php artisan packager:new MyVendor MyPackage --i
 $ php artisan packager:new --i
+
+```
+####3 stap
+```
+make an release on github (v1.0)
 
 ```
 
