@@ -30,33 +30,25 @@ vendor/
 Via Composer
 
 ``` bash
-$ composer require mediaverse-nl/test-package
+$ composer require mediaverse-nl/asdasds --no-dev
 ```
-1 stap
+####1 stap
 ```
-cd packages/Mediaverse
+cd packages/Mediaverse/<vendor>
 php prefill.php
 ```
 ```
 git init
-git remote add beanstalk git@accountname.beanstalkapp.com:/gitreponame.git
-git add .
-git commit -m "Importing my project to Git, without saving history."
-git push beanstalk master
+git remote add origin https://github.com/mediaverse-nl/<packagename>.git
+git commit -m "initial commit"
+git push origin master
 
 ```
-2 stap
+####2 stap
 ```
 $ php artisan packager:new MyVendor MyPackage --i
 $ php artisan packager:new --i
 
-```
-
-## Usage
-
-``` php
-$skeleton = new Mediaverse\Test();
-echo $skeleton->echoPhrase('Hello, League!');
 ```
 
 ## Change log
